@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Box, createTheme, Stack, ThemeProvider } from "@mui/material"
 import Navbar from "./components/Navbar"
 import Sidebar from "./components/Sidebar"
+import Feed from "./components/Feed"
 
 function App() {
   const [mode, setMode] = useState("light")
@@ -17,6 +18,7 @@ function App() {
         <Navbar />
         <Stack direction="row" spacing={2} justifyContent="space-between">
           <Sidebar setMode={setMode} mode={mode} />
+          <Feed />
         </Stack>
       </Box>
     </ThemeProvider>
