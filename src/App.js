@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar"
 import Sidebar from "./components/Sidebar"
 import Feed from "./components/Feed"
 import RightBar from "./components/RightBar"
+import Add from "./components/Add"
 
 function App() {
   const [mode, setMode] = useState("light")
@@ -22,6 +23,7 @@ function App() {
           <Feed />
           <RightBar />
         </Stack>
+        <Add />
       </Box>
     </ThemeProvider>
   )
